@@ -73,7 +73,8 @@ local function Get()
 	wait(0.135)
 	game:GetService("ReplicatedStorage").Duplicate:FireServer()
 	wait(Setting.Time)
-repeat(10)
+	local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
+	loop(2)
 end
 
 if game.Players.LocalPlayer.Character:FindFirstChild("entered") == nil then
